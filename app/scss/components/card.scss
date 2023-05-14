@@ -1,4 +1,81 @@
 @use "../util" as *;
-.card{
-    padding: rem(20);
+
+.card {
+  background-color: var(--dark-card);
+  color: var(--dark-text1);
+  width: rem(255); /* Temporary */
+
+  /* My different style */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+
+  &--facebook {
+  }
+
+  &--twitter {
+  }
+
+  &--instagram {
+  }
+
+  &--yooutube {
+  }
+
+  &__platform {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: rem(28);
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: rem(8);
+    &--facebook {
+    }
+
+    &--twitter {
+    }
+
+    &--instagram {
+    }
+
+    &--yooutube {
+    }
+  }
+
+  &__username {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+
+  &__count {
+    &--big {
+      font-size: rem(56);
+      font-weight: bold;
+      color: var(--dark-text2);
+      letter-spacing: rem(-2);
+      line-height: 1;
+      margin-bottom: rem(4);
+    }
+
+    &--small {
+    }
+  }
+  &__label {
+    font-size: rem(12);
+    letter-spacing: rem(5);
+    font-weight: 400;
+    color: var(--dark-text1);
+    text-transform: uppercase;
+  }
+
+  &__change {
+    &--up {
+    }
+    &--down {
+    }
+  }
 }
